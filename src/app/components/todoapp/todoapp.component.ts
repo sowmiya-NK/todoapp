@@ -25,7 +25,7 @@ export class TodoappComponent {
       });
       this.username = '';
       this.email = '';
-      this.phonenumber = 91;
+      this.phonenumber = +91;
       return this.todoapps;
     } else {
       // this.edit(this.id);
@@ -42,6 +42,9 @@ export class TodoappComponent {
         }
       });
       this.btnText = 'save';
+      this.username = '';
+      this.email = '';
+      this.phonenumber = +91;
       return this.todoapps;
     }
     this.editId = 0;
